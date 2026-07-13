@@ -10,7 +10,7 @@ export default function WhyChoose() {
   return (
     <section
       id="why-choose"
-      className="py-24 px-6 md:px-12 max-w-7xl mx-auto z-10 relative bg-white overflow-hidden"
+      className="py-24 px-4 md:px-8 max-w-7xl mx-auto z-10 relative bg-white overflow-hidden"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12  gap-16 items-center">
         {/* Left Column: TGT Positioning & Custom Checklist */}
@@ -21,7 +21,7 @@ export default function WhyChoose() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: easeCurve }}
-            className="text-xs font-black tracking-widest text-[#ff7a00] uppercase mb-3 block"
+            className="text-xs font-black tracking-widest text-[#d4af37] uppercase mb-3 block"
           >
             Why Choose Us
           </motion.span>
@@ -31,7 +31,7 @@ export default function WhyChoose() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: easeCurve, delay: 0.05 }}
-            className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight leading-[1.12] text-zinc-900 mb-4"
+            className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight leading-[1.12] text-midnight mb-4"
           >
             Why Choose The Gold Technologies
           </motion.h2>
@@ -41,7 +41,7 @@ export default function WhyChoose() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, ease: easeCurve, delay: 0.1 }}
-            className="text-base sm:text-lg font-bold text-zinc-800 mb-4 border-l-2 border-[#ff7a00] pl-3"
+            className="text-base sm:text-lg font-bold text-gray-800 mb-4 border-l-2 border-[#d4af37] pl-3"
           >
             More Than a Website Agency. Your Technology Partner.
           </motion.h3>
@@ -51,7 +51,7 @@ export default function WhyChoose() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, ease: easeCurve, delay: 0.15 }}
-            className="text-zinc-550 text-sm sm:text-base leading-relaxed mb-8 max-w-xl"
+            className="text-gray-550 text-sm sm:text-base leading-relaxed mb-8 max-w-xl"
           >
             At The Gold Technologies, we combine strategy, design, development,
             and technology expertise to create digital experiences that drive
@@ -81,11 +81,11 @@ export default function WhyChoose() {
                 }}
                 className="flex items-center gap-3 group"
               >
-                <div className="w-6 h-6 rounded-full bg-orange-50 flex items-center justify-center shrink-0 group-hover:bg-orange-100 transition-colors duration-300">
+                <div className="w-6 h-6 rounded-full bg-yellow-50 flex items-center justify-center shrink-0 group-hover:bg-yellow-100 transition-colors duration-300">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#ff7a00"
+                    stroke="#d4af37"
                     strokeWidth="3.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -94,7 +94,7 @@ export default function WhyChoose() {
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 </div>
-                <span className="text-zinc-700 text-sm font-semibold tracking-wide group-hover:text-zinc-900 transition-colors duration-300">
+                <span className="text-gray-700 text-sm font-semibold tracking-wide group-hover:text-midnight transition-colors duration-300">
                   {item}
                 </span>
               </motion.div>
@@ -105,7 +105,7 @@ export default function WhyChoose() {
         {/* Right Column: Animated Interactive Tech Dashboard */}
         <div className="lg:col-span-6 relative flex items-center justify-center min-h-[500px] w-full">
           {/* Ambient glowing background circles */}
-          <div className="absolute w-72 h-72 rounded-full bg-[#ff7a00]/5 blur-[80px] -top-10 -left-10 pointer-events-none" />
+          <div className="absolute w-72 h-72 rounded-full bg-[#d4af37]/5 blur-[80px] -top-10 -left-10 pointer-events-none" />
           <div className="absolute w-72 h-72 rounded-full bg-[#d4af37]/10 blur-[80px] -bottom-10 -right-10 pointer-events-none" />
 
           {/* Main Container for the composition */}
@@ -133,7 +133,7 @@ export default function WhyChoose() {
                     x2="100%"
                     y2="100%"
                   >
-                    <stop offset="0%" stopColor="#ff7a00" />
+                    <stop offset="0%" stopColor="#d4af37" />
                     <stop offset="100%" stopColor="#d4af37" />
                   </linearGradient>
                 </defs>
@@ -175,9 +175,9 @@ export default function WhyChoose() {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: easeCurve }}
-              className="relative z-10 w-32 h-32 rounded-full bg-gradient-to-tr from-[#ff7a00] to-[#fbbf24] p-[1.5px] shadow-[0_0_50px_rgba(255,122,0,0.25)] flex items-center justify-center group cursor-pointer"
+              className="relative z-10 w-32 h-32 rounded-full bg-gradient-to-tr from-[#d4af37] to-[#d4af37] p-[1.5px] shadow-[0_0_50px_rgba(255,122,0,0.25)] flex items-center justify-center group cursor-pointer"
             >
-              <div className="w-full h-full bg-white rounded-full flex flex-col items-center justify-center relative overflow-hidden transition-colors duration-300 group-hover:bg-zinc-50">
+              <div className="w-full h-full bg-white rounded-full flex flex-col items-center justify-center relative overflow-hidden transition-colors duration-300 group-hover:bg-gray-50">
                 {/* Subtle internal spinning lines or pulse */}
                 <motion.div
                   animate={{ scale: [1, 1.08, 1] }}
@@ -186,10 +186,10 @@ export default function WhyChoose() {
                     duration: 3,
                     ease: "easeInOut",
                   }}
-                  className="absolute inset-2 rounded-full bg-gradient-to-tr from-[#ff7a00]/5 to-[#fbbf24]/10"
+                  className="absolute inset-2 rounded-full bg-gradient-to-tr from-[#d4af37]/5 to-[#d4af37]/10"
                 />
-                <Cpu className="w-8 h-8 text-[#ff7a00] relative z-10 mb-1 group-hover:rotate-12 transition-transform duration-300" />
-                <span className="text-[10px] font-black text-zinc-800 tracking-wider relative z-10 uppercase">
+                <Cpu className="w-8 h-8 text-[#d4af37] relative z-10 mb-1 group-hover:rotate-12 transition-transform duration-300" />
+                <span className="text-[10px] font-black text-gray-800 tracking-wider relative z-10 uppercase">
                   TGT Core
                 </span>
               </div>
@@ -202,17 +202,17 @@ export default function WhyChoose() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: easeCurve, delay: 0.3 }}
               whileHover={{ y: -65, scale: 1.02 }}
-              className="absolute top-8 left-0 z-20 w-[200px] rounded-2xl border border-zinc-200/80 bg-white/70 backdrop-blur-xl p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
+              className="absolute top-8 left-0 z-20 w-[200px] rounded-2xl border border-gray-200/80 bg-white/70 backdrop-blur-xl p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
             >
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">
+                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
                   Performance
                 </span>
                 <span className="text-[10px] font-black text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded-full flex items-center gap-0.5">
                   <TrendingUp className="w-3 h-3" /> +85%
                 </span>
               </div>
-              <div className="text-xl font-bold text-zinc-800 mb-2">
+              <div className="text-xl font-bold text-gray-800 mb-2">
                 99.8 Gb/s
               </div>
 
@@ -227,8 +227,8 @@ export default function WhyChoose() {
                       x2="0"
                       y2="1"
                     >
-                      <stop offset="0%" stopColor="#ff7a00" stopOpacity="0.2" />
-                      <stop offset="100%" stopColor="#ff7a00" stopOpacity="0" />
+                      <stop offset="0%" stopColor="#d4af37" stopOpacity="0.2" />
+                      <stop offset="100%" stopColor="#d4af37" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                   {/* Fill under path */}
@@ -243,7 +243,7 @@ export default function WhyChoose() {
                   <motion.path
                     d="M0,35 Q20,10 40,25 T80,15 T120,30 T160,10"
                     fill="none"
-                    stroke="#ff7a00"
+                    stroke="#d4af37"
                     strokeWidth="2"
                     strokeLinecap="round"
                     initial={{ pathLength: 0 }}
@@ -259,7 +259,7 @@ export default function WhyChoose() {
                     cx="160"
                     cy="10"
                     r="3"
-                    fill="#ff7a00"
+                    fill="#d4af37"
                     initial={{ scale: 0 }}
                     animate={{ scale: [1, 2, 1] }}
                     transition={{ repeat: Infinity, duration: 2 }}
@@ -275,22 +275,22 @@ export default function WhyChoose() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: easeCurve, delay: 0.4 }}
               whileHover={{ y: 55, scale: 1.02 }}
-              className="absolute bottom-8 right-0 z-20 w-[190px] rounded-2xl border border-zinc-200/80 bg-white/70 backdrop-blur-xl p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
+              className="absolute bottom-8 right-0 z-20 w-[190px] rounded-2xl border border-gray-200/80 bg-white/70 backdrop-blur-xl p-4 shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
             >
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-6 h-6 rounded-full bg-zinc-100 flex items-center justify-center">
+                <div className="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
                   <Shield className="w-3.5 h-3.5 text-[#d4af37]" />
                 </div>
-                <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">
+                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
                   Enterprise Security
                 </span>
               </div>
-              <div className="text-lg font-bold text-zinc-800 mb-1">
+              <div className="text-lg font-bold text-gray-800 mb-1">
                 Ultra Secure
               </div>
               <div className="flex items-center gap-1.5">
                 <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[10px] font-medium text-zinc-500">
+                <span className="text-[10px] font-medium text-gray-500">
                   256-bit Encrypted
                 </span>
               </div>
@@ -303,9 +303,9 @@ export default function WhyChoose() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: easeCurve, delay: 0.5 }}
               whileHover={{ scale: 1.05 }}
-              className="absolute top-10 right-4 z-20 flex items-center gap-2 bg-zinc-900 text-white rounded-full py-1.5 px-3 shadow-lg border border-zinc-800"
+              className="absolute top-10 right-4 z-20 flex items-center gap-2 bg-midnight/90 text-white rounded-full py-1.5 px-3 shadow-lg border border-gray-800"
             >
-              <Zap className="w-3.5 h-3.5 text-[#fbbf24] fill-[#fbbf24]" />
+              <Zap className="w-3.5 h-3.5 text-[#d4af37] fill-[#d4af37]" />
               <span className="text-[10px] font-bold tracking-wider uppercase">
                 0.1s Load Time
               </span>
@@ -318,10 +318,10 @@ export default function WhyChoose() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: easeCurve, delay: 0.6 }}
               whileHover={{ scale: 1.05 }}
-              className="absolute bottom-10 left-4 z-20 flex items-center gap-2 bg-white border border-zinc-200/80 rounded-full py-1.5 px-3.5 shadow-md"
+              className="absolute bottom-10 left-4 z-20 flex items-center gap-2 bg-white border border-gray-200/80 rounded-full py-1.5 px-3.5 shadow-md"
             >
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-              <span className="text-[10px] font-bold text-zinc-600 tracking-wider uppercase">
+              <span className="text-[10px] font-bold text-gray-600 tracking-wider uppercase">
                 99.99% Uptime
               </span>
             </motion.div>

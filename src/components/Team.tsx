@@ -7,17 +7,17 @@ export default function Team() {
   return (
     <section
       id="team"
-      className="py-24 px-6 md:px-12 max-w-7xl mx-auto z-10 relative border-t border-zinc-200"
+      className="py-24 px-4 md:px-8 max-w-7xl mx-auto w-full z-10 relative border-t border-gray-200"
     >
       {/* Background glow orbs */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#ff7a00]/3 blur-[90px] pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#d4af37]/3 blur-[90px] pointer-events-none -z-10" />
 
       {/* Header (Inspired by reference layout) */}
       <div className="text-left mb-20 max-w-5xl mx-auto">
-        <span className="text-zinc-400 uppercase tracking-widest font-black text-[10px] block mb-2 font-mono">
+        <span className="text-gray-400 uppercase tracking-widest font-black text-[10px] block mb-2 font-mono">
           WE ARE TGT
         </span>
-        <h2 className="text-4xl sm:text-5xl font-black text-zinc-900 tracking-tight leading-none">
+        <h2 className="text-4xl sm:text-5xl font-black text-midnight tracking-tight leading-none">
           Our People
         </h2>
       </div>
@@ -32,7 +32,7 @@ export default function Team() {
             {/* Organic Blob Avatar Frame */}
             <div className="relative w-36 h-36 mb-6 flex items-center justify-center">
               {/* Organic colored blob element behind */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#ff7a00] to-[#fbbf24] rounded-[40%_60%_70%_30%_/_40%_50%_60%_50%] transition-transform duration-500 group-hover:scale-105 group-hover:rotate-6 pointer-events-none shadow-sm" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#d4af37] to-[#d4af37] rounded-[40%_60%_70%_30%_/_40%_50%_60%_50%] transition-transform duration-500 group-hover:scale-105 group-hover:rotate-6 pointer-events-none shadow-sm" />
               
               {/* Circular Cropped Colored avatar to hide square gray background */}
               <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-white bg-white relative z-10 transition-transform duration-500 group-hover:-translate-y-1 shadow-md">
@@ -46,10 +46,10 @@ export default function Team() {
 
             {/* Profile Info matching mockup hierarchy */}
             <div className="flex flex-col items-center">
-              <span className="text-[10px] text-[#ff7a00] font-black uppercase tracking-widest block mb-1 font-mono">
+              <span className="text-[10px] text-[#d4af37] font-black uppercase tracking-widest block mb-1 font-mono">
                 {member.role}
               </span>
-              <h3 className="text-lg font-black text-zinc-900 mb-1 leading-tight">
+              <h3 className="text-lg font-black text-midnight mb-1 leading-tight">
                 {member.name}
               </h3>
               <a
@@ -58,7 +58,7 @@ export default function Team() {
               >
                 {member.email}
               </a>
-              <p className="text-[10px] text-zinc-400 font-semibold max-w-[200px] leading-relaxed">
+              <p className="text-[10px] text-gray-400 font-semibold max-w-[200px] leading-relaxed">
                 {member.bio}
               </p>
             </div>

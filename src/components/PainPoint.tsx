@@ -6,70 +6,107 @@ import { motion } from "framer-motion";
 // Custom premium mathematical SVG geometric icons matching the mockup
 function LooksOutdatedIcon() {
   return (
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       {/* Left part: vertical pill + top-left horizontal pill */}
-      <rect x="12" y="6" width="7" height="28" rx="3.5" fill="#fbbf24" />
-      <rect x="5" y="6" width="14" height="12" rx="6" fill="#fbbf24" />
+      <rect x="12" y="6" width="7" height="28" rx="3.5" fill="#d4af37" />
+      <rect x="5" y="6" width="14" height="12" rx="6" fill="#d4af37" />
       {/* Right part: vertical pill + bottom-right horizontal pill */}
-      <rect x="21" y="6" width="7" height="28" rx="3.5" fill="#fbbf24" />
-      <rect x="21" y="22" width="14" height="12" rx="6" fill="#fbbf24" />
+      <rect x="21" y="6" width="7" height="28" rx="3.5" fill="#d4af37" />
+      <rect x="21" y="22" width="14" height="12" rx="6" fill="#d4af37" />
     </svg>
   );
 }
 
 function LoadsSlowlyIcon() {
   return (
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       {/* Top-Left circle */}
-      <circle cx="12" cy="12" r="6" fill="#fbbf24" />
+      <circle cx="12" cy="12" r="6" fill="#d4af37" />
       {/* Bottom-Left circle */}
-      <circle cx="12" cy="28" r="6" fill="#fbbf24" />
+      <circle cx="12" cy="28" r="6" fill="#d4af37" />
       {/* Bottom-Right circle */}
-      <circle cx="28" cy="28" r="6" fill="#fbbf24" />
+      <circle cx="28" cy="28" r="6" fill="#d4af37" />
       {/* Top-Right quarter circle pointing up-right */}
-      <path d="M 22 18 H 34 C 34 11.37 28.63 6 22 6 V 18 Z" fill="#fbbf24" />
+      <path d="M 22 18 H 34 C 34 11.37 28.63 6 22 6 V 18 Z" fill="#d4af37" />
     </svg>
   );
 }
 
 function MobileFriendlyIcon() {
   return (
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       {/* Top-Left leaf pointing top-left */}
-      <path d="M 18 18 H 6 C 6 11.37 11.37 6 18 6 V 18 Z" fill="#fbbf24" />
+      <path d="M 18 18 H 6 C 6 11.37 11.37 6 18 6 V 18 Z" fill="#d4af37" />
       {/* Top-Right leaf pointing top-right */}
-      <path d="M 22 18 H 34 C 34 11.37 28.63 6 22 6 V 18 Z" fill="#fbbf24" />
+      <path d="M 22 18 H 34 C 34 11.37 28.63 6 22 6 V 18 Z" fill="#d4af37" />
       {/* Bottom-Left leaf pointing bottom-left */}
-      <path d="M 18 22 H 6 C 6 28.63 11.37 34 18 34 V 22 Z" fill="#fbbf24" />
+      <path d="M 18 22 H 6 C 6 28.63 11.37 34 18 34 V 22 Z" fill="#d4af37" />
       {/* Bottom-Right leaf pointing bottom-right */}
-      <path d="M 22 22 H 34 C 34 28.63 28.63 34 22 34 V 22 Z" fill="#fbbf24" />
+      <path d="M 22 22 H 34 C 34 28.63 28.63 34 22 34 V 22 Z" fill="#d4af37" />
     </svg>
   );
 }
 
 function GoogleRankIcon() {
   return (
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       {/* Top-Left circle */}
-      <circle cx="12" cy="12" r="6" fill="#fbbf24" />
+      <circle cx="12" cy="12" r="6" fill="#d4af37" />
       {/* Top-Right circle */}
-      <circle cx="28" cy="12" r="6" fill="#fbbf24" />
+      <circle cx="28" cy="12" r="6" fill="#d4af37" />
       {/* Bottom-Left circle */}
-      <circle cx="12" cy="28" r="6" fill="#fbbf24" />
+      <circle cx="12" cy="28" r="6" fill="#d4af37" />
       {/* Bottom-Right circle */}
-      <circle cx="28" cy="28" r="6" fill="#fbbf24" />
+      <circle cx="28" cy="28" r="6" fill="#d4af37" />
     </svg>
   );
 }
 
 function ConversionIcon() {
   return (
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       {/* Center circle */}
-      <circle cx="20" cy="20" r="4" fill="#fbbf24" />
+      <circle cx="20" cy="20" r="4" fill="#d4af37" />
       {/* Concentric rings */}
-      <circle cx="20" cy="20" r="10" stroke="#fbbf24" strokeWidth="2.5" strokeDasharray="6 4" />
-      <circle cx="20" cy="20" r="16" stroke="#fbbf24" strokeWidth="2" />
+      <circle
+        cx="20"
+        cy="20"
+        r="10"
+        stroke="#d4af37"
+        strokeWidth="2.5"
+        strokeDasharray="6 4"
+      />
+      <circle cx="20" cy="20" r="16" stroke="#d4af37" strokeWidth="2" />
     </svg>
   );
 }
@@ -124,11 +161,15 @@ export default function PainPoint() {
   return (
     <div
       ref={sectionRef}
-      className="relative bg-black text-white py-28 px-6 md:px-12 lg:px-20 overflow-hidden border-t border-zinc-900"
+      className="relative bg-midnight text-white py-28 px-4 md:px-8 overflow-hidden border-t border-gray-900"
     >
+      {/* Background Image Overlay */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-screen pointer-events-none"
+        style={{ backgroundImage: "url('/painpoint-bg.png')" }}
+      />
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
           {/* Left Column: Heading and Intro */}
           <div className="lg:col-span-5 flex flex-col text-left">
             <motion.h2
@@ -147,9 +188,10 @@ export default function PainPoint() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: easeCurve, delay: 0.08 }}
-              className="text-zinc-300 italic border-l-2 border-[#fbbf24] pl-4 mt-8 text-xs sm:text-sm leading-relaxed max-w-sm"
+              className="text-gray-300 italic border-l-2 border-brand-gold pl-4 mt-8 text-xs sm:text-sm leading-relaxed max-w-sm"
             >
-              &ldquo;Your website should be your best salesperson—working 24/7 to attract, engage, and convert potential customers.&rdquo;
+              &ldquo;Your website should be your best salesperson—working 24/7
+              to attract, engage, and convert potential customers.&rdquo;
             </motion.p>
 
             <motion.p
@@ -157,7 +199,7 @@ export default function PainPoint() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: easeCurve, delay: 0.12 }}
-              className="text-[#fbbf24] mt-3 text-[10px] sm:text-xs font-semibold uppercase tracking-wider font-mono"
+              className="text-brand-gold mt-3 text-[10px] sm:text-xs font-semibold uppercase tracking-wider font-mono"
             >
               We help turn underperforming sites into revenue-generating assets.
             </motion.p>
@@ -167,7 +209,7 @@ export default function PainPoint() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: easeCurve, delay: 0.16 }}
-              className="text-zinc-400 mt-10 text-xs sm:text-sm font-normal leading-relaxed max-w-xs"
+              className="text-gray-400 mt-10 text-xs sm:text-sm font-normal leading-relaxed max-w-xs"
             >
               Most businesses lose leads because their website:
             </motion.p>
@@ -194,10 +236,10 @@ export default function PainPoint() {
                     <div className="mb-6 flex items-center justify-center">
                       <Icon />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3 tracking-tight text-zinc-100">
+                    <h3 className="text-xl font-bold text-white mb-3 tracking-tight text-gray-100">
                       {item.label}
                     </h3>
-                    <p className="text-zinc-400 text-sm leading-relaxed font-normal">
+                    <p className="text-gray-400 text-sm leading-relaxed font-normal">
                       {item.description}
                     </p>
                   </motion.div>
@@ -205,7 +247,6 @@ export default function PainPoint() {
               })}
             </div>
           </div>
-
         </div>
       </div>
     </div>
