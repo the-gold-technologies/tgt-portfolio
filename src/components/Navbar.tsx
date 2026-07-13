@@ -75,7 +75,7 @@ export default function Navbar() {
                   className={`font-bold tracking-tight transition-all duration-500 whitespace-nowrap overflow-hidden ${
                     scrolled
                       ? "text-slate-900 text-[15px] max-w-[300px] opacity-100 ml-2 md:max-w-0 md:opacity-0 md:ml-0"
-                      : "text-white text-[17px] sm:text-[19px] max-w-[300px] opacity-100 ml-2"
+                      : "text-slate-900 text-[17px] sm:text-[19px] max-w-[300px] opacity-100 ml-2"
                   }`}
                 >
                   The Gold Technologies
@@ -85,30 +85,30 @@ export default function Navbar() {
 
             <div
               className={`hidden md:flex items-center gap-8 text-[14px] font-medium transition-all duration-500 relative z-10 ${
-                scrolled ? "text-slate-800" : "text-gray-200"
+                scrolled ? "text-slate-800" : "text-slate-600"
               }`}
             >
               <Link
                 href="#why-choose"
-                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
+                className={`transition-colors hover:text-black`}
               >
                 Why Us
               </Link>
               <Link
                 href="#projects"
-                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
+                className={`transition-colors hover:text-black`}
               >
                 Projects
               </Link>
               <Link
                 href="#pricing"
-                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
+                className={`transition-colors hover:text-black`}
               >
                 Pricing
               </Link>
               <Link
                 href="#contact"
-                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
+                className={`transition-colors hover:text-black`}
               >
                 Contact Us
               </Link>

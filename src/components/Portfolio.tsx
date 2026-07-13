@@ -36,7 +36,7 @@ export default function Portfolio() {
         </div>
 
         {/* Accordion Container */}
-        <div className="flex flex-col md:flex-row w-full h-[700px] md:h-[550px] lg:h-[600px] gap-3 md:gap-5">
+        <div className="flex flex-col md:flex-row w-full h-[600px] md:h-[450px] lg:h-[500px] gap-3 md:gap-5">
           {PROJECTS.map((project, index) => {
             const isActive = active === index;
             
