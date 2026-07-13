@@ -383,7 +383,7 @@ export default function Technologies() {
   return (
     <section
       id="technologies"
-      className="py-28 bg-midnight text-white z-10 relative border-t border-gray-900 overflow-hidden w-full animate-fadeIn"
+      className="py-28 bg-black text-white z-10 relative border-t border-gray-900 overflow-hidden w-full animate-fadeIn"
     >
       {/* Subtle radial background glow behind the tech container */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#d4af37]/5 blur-[120px] rounded-full pointer-events-none z-0" />
@@ -393,7 +393,7 @@ export default function Technologies() {
         className="absolute inset-0 z-[1] bg-cover bg-center bg-no-repeat opacity-[0.2]"
         style={{ backgroundImage: "url('/tech-bg.png')" }}
       />
-      <div className="absolute inset-0 z-[2] bg-midnight/80 pointer-events-none" />
+      <div className="absolute inset-0 z-[2] bg-black/80 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 w-full relative z-10">
         <style>{`
@@ -450,7 +450,7 @@ export default function Technologies() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left z-10"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-midnight/90 border border-gray-800 rounded-full text-xs font-semibold text-gray-300 shadow-[0_2px_8px_rgba(0,0,0,0.2)] mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-black/90 border border-gray-800 rounded-full text-xs font-semibold text-gray-300 shadow-[0_2px_8px_rgba(0,0,0,0.2)] mb-6">
               <span className="text-[#d4af37]">✦</span>
               <span>Our Tech Stack</span>
             </div>
@@ -476,7 +476,7 @@ export default function Technologies() {
 
           {/* Right Column */}
           <div className="lg:col-span-7 w-full flex justify-center lg:justify-end z-10">
-            <div className="w-full max-w-[520px] bg-midnight/90/30 border border-gray-800/50 backdrop-blur-md shadow-[0_30px_60px_rgba(0,0,0,0.4)] rounded-[32px] p-6 sm:p-8 h-[450px] sm:h-[530px] relative overflow-hidden flex gap-5 sm:gap-7 justify-center">
+            <div className="w-full max-w-[520px] bg-black/40 border border-gray-800/50 backdrop-blur-md shadow-[0_30px_60px_rgba(0,0,0,0.4)] rounded-[32px] p-6 sm:p-8 h-[450px] sm:h-[530px] relative overflow-hidden flex gap-5 sm:gap-7 justify-center">
               {/* Top and Bottom Fades */}
               <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-gray-950 via-gray-950/80 to-transparent z-10 pointer-events-none" />
               <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-gray-950 via-gray-950/80 to-transparent z-10 pointer-events-none" />

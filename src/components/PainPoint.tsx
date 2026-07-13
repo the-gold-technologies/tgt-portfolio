@@ -161,7 +161,7 @@ export default function PainPoint() {
   return (
     <div
       ref={sectionRef}
-      className="relative bg-midnight text-white py-28 px-4 md:px-8 overflow-hidden border-t border-gray-900"
+      className="relative bg-black text-white py-28 px-4 md:px-8 overflow-hidden border-t border-gray-900"
     >
       {/* Background Image Overlay */}
       <div

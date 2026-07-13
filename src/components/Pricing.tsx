@@ -100,7 +100,7 @@ export default function Pricing() {
               onClick={() => setBilling("monthly")}
               className={`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
                 billing === "monthly"
-                  ? "bg-midnight text-brand-gold shadow-sm"
+                  ? "bg-black text-brand-gold shadow-sm"
                   : "text-gray-400 hover:text-gray-600"
               }`}
             >
@@ -110,7 +110,7 @@ export default function Pricing() {
               onClick={() => setBilling("yearly")}
               className={`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 ${
                 billing === "yearly"
-                  ? "bg-midnight text-brand-gold shadow-sm"
+                  ? "bg-black text-brand-gold shadow-sm"
                   : "text-gray-400 hover:text-gray-600"
               }`}
             >
@@ -173,7 +173,7 @@ export default function Pricing() {
           </div>
 
           {/* Business CMS Website Package (Featured - Most Popular) */}
-          <div className="p-8 sm:p-10 lg:px-12 lg:pt-12 lg:pb-10 rounded-[28px] bg-midnight text-white shadow-[0_25px_50px_-12px_rgba(11,15,41,0.35)] border border-brand-gold/30 flex flex-col justify-between relative min-h-[660px] lg:min-h-[760px] lg:h-auto">
+          <div className="p-8 sm:p-10 lg:px-12 lg:pt-12 lg:pb-10 rounded-[28px] bg-black text-white shadow-[0_25px_50px_-12px_rgba(11,15,41,0.35)] border border-brand-gold/30 flex flex-col justify-between relative min-h-[660px] lg:min-h-[760px] lg:h-auto">
             <div className="absolute top-6 right-6 bg-brand-gold text-white text-[9px] font-black uppercase tracking-wider px-3 py-1 rounded-full">
               Most Popular
             </div>

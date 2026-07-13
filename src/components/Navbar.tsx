@@ -51,7 +51,13 @@ export default function Navbar() {
               : "w-full py-6 px-4 md:px-8 lg:px-12 bg-transparent rounded-none"
           }`}
         >
-          <div className={scrolled ? "flex items-center w-full justify-between gap-6 md:gap-12" : "max-w-7xl 2xl:max-w-[90rem] mx-auto w-full flex items-center justify-between gap-4 sm:gap-8"}>
+          <div
+            className={
+              scrolled
+                ? "flex items-center w-full justify-between gap-6 md:gap-12"
+                : "max-w-7xl 2xl:max-w-[90rem] mx-auto w-full flex items-center justify-between gap-4 sm:gap-8"
+            }
+          >
             <Link href="/" className="shrink-0">
               <div className="flex items-center gap-2.5 relative z-10">
                 <Image
@@ -61,7 +67,9 @@ export default function Navbar() {
                   className={`rounded-full transition-all duration-500 shrink-0`}
                   src="/logo.jpeg"
                 />
-                <span className={`font-bold tracking-tight text-slate-900 transition-all duration-500 whitespace-nowrap ${scrolled ? "text-[15px] md:text-base" : "text-[17px] sm:text-[19px]"}`}>
+                <span
+                  className={`font-bold tracking-tight text-slate-900 transition-all duration-500 whitespace-nowrap ${scrolled ? "text-[15px] md:text-base" : "text-[17px] sm:text-[19px]"}`}
+                >
                   The Gold Technologies
                 </span>
               </div>
@@ -76,13 +84,22 @@ export default function Navbar() {
               >
                 Why Us
               </Link>
-              <Link href="#projects" className="transition-colors hover:text-black">
+              <Link
+                href="#projects"
+                className="transition-colors hover:text-black"
+              >
                 Projects
               </Link>
-              <Link href="#pricing" className="transition-colors hover:text-black">
+              <Link
+                href="#pricing"
+                className="transition-colors hover:text-black"
+              >
                 Pricing
               </Link>
-              <Link href="#contact" className="transition-colors hover:text-black">
+              <Link
+                href="#contact"
+                className="transition-colors hover:text-black"
+              >
                 Contact Us
               </Link>
             </div>
@@ -102,7 +119,11 @@ export default function Navbar() {
               className={`md:hidden flex items-center justify-center p-2 -mr-2 rounded-full text-slate-900 hover:bg-slate-200/50 transition-colors shrink-0`}
               aria-label="Open Mobile Menu"
             >
-              <Menu className={scrolled ? "w-5 h-5 sm:w-6 sm:h-6" : "w-6 h-6 sm:w-7 sm:h-7"} />
+              <Menu
+                className={
+                  scrolled ? "w-5 h-5 sm:w-6 sm:h-6" : "w-6 h-6 sm:w-7 sm:h-7"
+                }
+              />
             </button>
           </div>
         </nav>

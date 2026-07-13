@@ -188,6 +188,19 @@ export const PROJECTS: Project[] = [
     ],
     mockupType: 'laptop',
     features: ['ERP / CRM', 'BI Dashboards', 'AI Automations']
+  },
+  {
+    title: 'Mobile Apps & IoT',
+    category: 'Mobile Apps',
+    description: 'High-performance native and cross-platform mobile applications integrated with smart device ecosystems.',
+    details: [
+      'Native iOS (Swift) & Android (Kotlin) development',
+      'Cross-platform Flutter & React Native apps',
+      'Hardware integration & IoT sensor connectivity',
+      'Seamless UI/UX for touch interfaces'
+    ],
+    mockupType: 'laptop',
+    features: ['iOS & Android', 'Cross-Platform', 'Smart Devices']
   }
 ];
 
