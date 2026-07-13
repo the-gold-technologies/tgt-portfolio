@@ -36,6 +36,10 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
+    
+    // Check initial scroll position on mount
+    updateScroll();
+    
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -62,13 +66,17 @@ export default function Navbar() {
               <div className="flex items-center gap-2.5 relative z-10">
                 <Image
                   alt="logo"
-                  width={scrolled ? 32 : 36}
-                  height={scrolled ? 32 : 36}
+                  width={scrolled ? 40 : 52}
+                  height={scrolled ? 40 : 52}
                   className={`rounded-full transition-all duration-500 shrink-0`}
                   src="/logo.jpeg"
                 />
                 <span
-                  className={`font-bold tracking-tight text-slate-900 transition-all duration-500 whitespace-nowrap ${scrolled ? "text-[15px] md:text-base" : "text-[17px] sm:text-[19px]"}`}
+                  className={`font-bold tracking-tight transition-all duration-500 whitespace-nowrap overflow-hidden ${
+                    scrolled
+                      ? "text-slate-900 text-[15px] max-w-[300px] opacity-100 ml-2 md:max-w-0 md:opacity-0 md:ml-0"
+                      : "text-white text-[17px] sm:text-[19px] max-w-[300px] opacity-100 ml-2"
+                  }`}
                 >
                   The Gold Technologies
                 </span>
@@ -76,29 +84,31 @@ export default function Navbar() {
             </Link>
 
             <div
-              className={`hidden md:flex items-center gap-8 text-[14px] font-medium transition-all duration-500 relative z-10 text-slate-600`}
+              className={`hidden md:flex items-center gap-8 text-[14px] font-medium transition-all duration-500 relative z-10 ${
+                scrolled ? "text-slate-800" : "text-gray-200"
+              }`}
             >
               <Link
                 href="#why-choose"
-                className="transition-colors hover:text-black"
+                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
               >
                 Why Us
               </Link>
               <Link
                 href="#projects"
-                className="transition-colors hover:text-black"
+                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
               >
                 Projects
               </Link>
               <Link
                 href="#pricing"
-                className="transition-colors hover:text-black"
+                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
               >
                 Pricing
               </Link>
               <Link
                 href="#contact"
-                className="transition-colors hover:text-black"
+                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
               >
                 Contact Us
               </Link>
@@ -107,7 +117,7 @@ export default function Navbar() {
             <div className="hidden sm:flex items-center gap-4 transition-all duration-500 relative z-10 shrink-0">
               <Link
                 href="#contact"
-                className={`px-6 py-2.5 rounded-full font-bold bg-[#D4AF37] text-black hover:bg-[#F5D061] transition-all shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_25px_rgba(212,175,55,0.6)] hover:scale-105 active:scale-95 ${scrolled ? "text-[11px] px-5 py-2" : "text-xs"}`}
+                className={`px-6 py-2.5 rounded-full font-bold bg-[#D4AF37] text-black hover:bg-[#F5D061] transition-all shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_25px_rgba(212,175,55,0.6)] hover:scale-105 active:scale-95 ${scrolled ? "text-[12px] px-5 py-2.5" : "text-[13px]"}`}
               >
                 Book a Call
               </Link>
