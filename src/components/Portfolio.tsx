@@ -27,7 +27,7 @@ export default function Portfolio() {
           </span>
           <h2 className="text-3xl sm:text-5xl font-black mt-2 tracking-tight text-white">
             Real Projects. Real Businesses.<br />
-            Real Results.
+            <span className="font-serif italic text-[#d4af37] font-medium">Real Results.</span>
           </h2>
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm sm:text-base font-semibold leading-relaxed">
             Explore websites and digital solutions developed for clients across

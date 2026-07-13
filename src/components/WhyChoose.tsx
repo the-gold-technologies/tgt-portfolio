@@ -33,7 +33,7 @@ export default function WhyChoose() {
             transition={{ duration: 0.8, ease: easeCurve, delay: 0.05 }}
             className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight leading-[1.12] text-midnight mb-4"
           >
-            Why Choose The Gold Technologies
+            Why Choose <span className="font-serif italic text-[#d4af37]">The Gold Technologies</span>
           </motion.h2>
 
           <motion.h3

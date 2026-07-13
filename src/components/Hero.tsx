@@ -78,7 +78,7 @@ export default function Hero() {
           >
             Websites That Don't Just Look Good.{" "}
             <br className="hidden xl:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4af37] to-amber-600">
+            <span className="font-serif italic text-[#d4af37] font-medium">
               They Deliver Results.
             </span>
           </motion.h1>
