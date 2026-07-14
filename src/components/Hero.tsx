@@ -45,7 +45,7 @@ export default function Hero() {
                 className="text-5xl sm:text-6xl md:text-7xl lg:text-[3.6rem] font-medium text-white tracking-tight leading-[1.05] mb-6"
               >
                 Building the future with <br /> <span className="text-[#d4af37]">high converting</span> web <br className="hidden lg:block" />
-                 experiences
+                experiences
               </motion.h1>
 
               <motion.p
@@ -73,8 +73,8 @@ export default function Hero() {
                   </span>
                 </Link>
 
-                
-              <div className="flex flex-col gap-1.5">
+
+                <div className="flex flex-col gap-1.5">
                   <p className="text-sm font-medium text-slate-300">Rated 4.9/5 by 100+ clients</p>
                   <div className="flex gap-1 text-[#d4af37]">
                     {[...Array(5)].map((_, i) => (
@@ -90,7 +90,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: easeCurve, delay: 0.2 }}
-              className="w-full lg:absolute lg:right-[-12%] xl:-right-16 lg:top-1/2 lg:-translate-y-[47%] lg:w-[700px] xl:w-[730px] aspect-square max-w-2xl lg:max-w-none z-10 pointer-events-none mt-8 lg:mt-0"
+              className="w-full lg:absolute lg:right-[-12%] xl:-right-16 lg:top-1/2 lg:-translate-y-[47%] lg:w-[700px] xl:w-[720px] aspect-square max-w-2xl lg:max-w-none z-10 pointer-events-none mt-8 lg:mt-0"
             >
               <Image
                 src="/hero-image.png"
