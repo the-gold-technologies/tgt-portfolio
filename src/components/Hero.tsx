@@ -90,7 +90,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: easeCurve, delay: 0.2 }}
-              className="w-full lg:absolute lg:right-[-12%] xl:-right-16 lg:top-1/2 lg:-translate-y-[47%] lg:w-[700px] xl:w-[750px] aspect-square max-w-2xl lg:max-w-none z-10 pointer-events-none mt-8 lg:mt-0"
+              className="w-full lg:absolute lg:right-[-12%] xl:-right-16 lg:top-1/2 lg:-translate-y-[47%] lg:w-[700px] xl:w-[730px] aspect-square max-w-2xl lg:max-w-none z-10 pointer-events-none mt-8 lg:mt-0"
             >
               <Image
                 src="/hero-image.png"
