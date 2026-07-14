@@ -138,69 +138,65 @@ export const TECHNOLOGIES: Technology[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Corporate Websites',
-    category: 'Lead Gen',
-    description: 'Build credibility, present corporate profiles, and generate high-quality business inquiries organically.',
+    title: 'Inventory Management System',
+    category: 'Inventory Tech',
+    description: 'Real-time inventory tracking and asset management featuring automated QR-code generation and barcode scanning.',
     details: [
-      'Tailored corporate profile architecture',
-      'Advanced Lead generation capture nodes',
-      'Integrated maps, analytics, and contact systems',
-      'Optimized loading times'
+      'Real-Time Inventory Tracking',
+      'Efficient Asset Management through generating a unique QR code against each item/product',
+      'Generate real-time reports for inventory audit',
+      'Bar code scanning through the scanner for stocking out the product'
     ],
     mockupType: 'laptop',
-    features: ['Lead Generation', 'Fast Loading', 'SEO Optimized']
+    features: ['QR Asset Tracking', 'Barcode Scanning', 'Real-Time Reports'],
+    image: '/projects/inventory.png',
+    link: 'https://skjewellers.tgtpartner.com/'
   },
   {
-    title: 'E-Commerce Stores',
-    category: 'E-commerce',
-    description: 'Turn visitors into active customers with optimized, seamless shopping and checkout flows.',
+    title: 'Catfy – AI-Driven Smart Creative Editor',
+    category: 'AI Creative',
+    description: 'Smart AI-powered catalogue builder that automates product description and image creation for professional businesses.',
     details: [
-      'Frictionless shopping checkout panels',
-      'Integrated payment gateways (Stripe, PayPal, etc.)',
-      'Custom inventory and orders controller',
-      'Admin catalog management panel'
+      'Smart Catalogue Builder',
+      'AI-driven descriptions & Image Creation',
+      'PDF and dynamic web pages sharing options',
+      'Pre-defined Catalogue templates',
+      'Support professionals and businesses both'
     ],
     mockupType: 'laptop',
-    features: ['Shopify', 'Secure Checkout', 'Product Catalog']
+    features: ['AI Catalog Builder', 'Dynamic Sharing', 'Creative Editor'],
+    image: '/projects/catfy.png',
+    link: 'https://catfy-catalog.vercel.app/'
   },
   {
-    title: 'Custom Portals & Web Applications',
-    category: 'Business Apps',
-    description: 'Automate manual business processes, improve workplace efficiency, and scale operations.',
+    title: 'Complete ERP for IP Industry',
+    category: 'Enterprise ERP',
+    description: 'All-in-one Enterprise Resource Planning system integrating Sales, Data Banks, Operations, Accounts, and Analytics for IP management.',
     details: [
-      'Centralized client & supplier portals',
-      'Secure document sharing vaults',
-      'Real-time reporting metrics dashboard',
-      'Workflow trigger automations'
+      'All-in-one ERP software integrating key business modules including Data Bank, Sales, Operations, Accounts, and Analytics',
+      'Centralizes business data and processes to ensure seamless collaboration across departments',
+      'Enables real-time tracking, reporting, and performance insights for informed decision-making',
+      'Improves operational efficiency, financial management, and overall business productivity through automation'
     ],
     mockupType: 'laptop',
-    features: ['Workflow Automation', 'Client Portal', 'Custom API']
+    features: ['All-in-One ERP', 'IP Data Bank', 'Business Analytics'],
+    image: '/projects/ip-erp.png',
+    link: 'https://ip-erp-iota.vercel.app/'
   },
   {
-    title: 'Enterprise Solutions',
-    category: 'Enterprise Tech',
-    description: 'Bespoke ERPs, custom CRMs, BI Dashboards, Inventory Control systems, and AI-powered automation platforms.',
+    title: 'LeadZenor – AI-Powered Event Networking & Lead Management',
+    category: 'Lead Gen & Events',
+    description: 'AI-driven event lead management and QR-based digital profile capture with automated follow-ups.',
     details: [
-      'Integrated enterprise resource controllers',
-      'Custom CRM customer dashboards',
-      'Advanced Business Intelligence dashboards',
-      'Inventory control and real-time alerts tracking'
+      'AI-driven event lead management for exhibitors and organizers',
+      'QR-based visitor data capture with instant digital profiles',
+      'Auto follow-up emails for improved visitor engagement',
+      'AI-generated Smart event recommendations based on previous event performance'
     ],
     mockupType: 'laptop',
-    features: ['ERP / CRM', 'BI Dashboards', 'AI Automations']
-  },
-  {
-    title: 'Mobile Apps & IoT',
-    category: 'Mobile Apps',
-    description: 'High-performance native and cross-platform mobile applications integrated with smart device ecosystems.',
-    details: [
-      'Native iOS (Swift) & Android (Kotlin) development',
-      'Cross-platform Flutter & React Native apps',
-      'Hardware integration & IoT sensor connectivity',
-      'Seamless UI/UX for touch interfaces'
-    ],
-    mockupType: 'laptop',
-    features: ['iOS & Android', 'Cross-Platform', 'Smart Devices']
+    features: ['AI Lead Capture', 'QR Digital Profiles', 'Auto Follow-Ups'],
+    image: '/projects/leadzenor.png',
+    link: 'https://leadflux.tgtpartner.com/'
   }
 ];
 

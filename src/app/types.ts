@@ -19,6 +19,8 @@ export interface Project {
   details: string[];
   mockupType: 'laptop' | 'mobile';
   features: string[];
+  image: string;
+  link?: string;
 }
 
 export interface TeamMember {

@@ -4,14 +4,6 @@ import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { PROJECTS } from "../app/data";
 
-const projectImages = [
-  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop", // Corporate Websites (Laptop with charts/website)
-  "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop", // E-Commerce (Shopping cart and phone)
-  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop", // Portals (Dashboard UI)
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop", // Enterprise (Multiple screens with complex data)
-  "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop", // Mobile Apps (Smartphone being used)
-];
-
 export default function Portfolio() {
   const [active, setActive] = useState<number>(0);
 
@@ -52,7 +44,7 @@ export default function Portfolio() {
                 {/* Background Image */}
                 <div 
                   className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 ease-in-out group-hover:scale-105"
-                  style={{ backgroundImage: `url(${projectImages[index]})` }}
+                  style={{ backgroundImage: `url(${project.image})` }}
                 />
 
                 {/* Overlays */}
@@ -82,10 +74,22 @@ export default function Portfolio() {
                   <p className="text-gray-200 text-sm md:text-base font-medium max-w-lg mb-8 line-clamp-2 md:line-clamp-none">
                     {project.description}
                   </p>
-                  <button className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-white/20 bg-white/10 hover:bg-white hover:text-black transition-all w-max text-sm font-bold backdrop-blur-md group/btn">
-                    Explore 
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-                  </button>
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-white/20 bg-white/10 hover:bg-white hover:text-black transition-all w-max text-sm font-bold backdrop-blur-md group/btn"
+                    >
+                      Explore 
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                    </a>
+                  ) : (
+                    <button className="flex items-center gap-2 px-6 py-2.5 rounded-full border border-white/20 bg-white/10 hover:bg-white hover:text-black transition-all w-max text-sm font-bold backdrop-blur-md group/btn">
+                      Explore 
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                    </button>
+                  )}
                 </div>
 
                 {/* Content - Inactive State */}
