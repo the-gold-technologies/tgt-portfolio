@@ -46,20 +46,20 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={`fixed z-50 w-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] flex justify-center ${scrolled ? "top-4 pointer-events-none px-4" : "top-0"}`}
+        className={`fixed z-50 transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] flex justify-center ${scrolled ? "top-4 pointer-events-none px-4 w-full" : "top-0 w-full"}`}
       >
         <nav
           className={`pointer-events-auto transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] ${
             scrolled
               ? "flex items-center bg-[#f1f1f1] backdrop-blur-md shadow-sm border border-gray-200/50 justify-between w-max rounded-full m-auto px-6 py-2.5 gap-6 md:gap-12"
-              : "w-full py-6 px-4 md:px-8 lg:px-12 bg-transparent rounded-none"
+              : "w-full pt-8 pb-4 bg-transparent rounded-none"
           }`}
         >
           <div
             className={
               scrolled
                 ? "flex items-center w-full justify-between gap-6 md:gap-12"
-                : "max-w-7xl 2xl:max-w-[90rem] mx-auto w-full flex items-center justify-between gap-4 sm:gap-8"
+                : "max-w-[96%] xl:max-w-[1400px] mx-auto w-full px-6 sm:px-10 md:px-16 flex items-center justify-between gap-4 sm:gap-8"
             }
           >
             <Link href="/" className="shrink-0">
@@ -75,7 +75,7 @@ export default function Navbar() {
                   className={`font-bold tracking-tight transition-all duration-500 whitespace-nowrap overflow-hidden ${
                     scrolled
                       ? "text-slate-900 text-[15px] max-w-[300px] opacity-100 ml-2 md:max-w-0 md:opacity-0 md:ml-0"
-                      : "text-slate-900 text-[17px] sm:text-[19px] max-w-[300px] opacity-100 ml-2"
+                      : "text-white text-[17px] sm:text-[19px] max-w-[300px] opacity-100 ml-2"
                   }`}
                 >
                   The Gold Technologies
@@ -85,30 +85,30 @@ export default function Navbar() {
 
             <div
               className={`hidden md:flex items-center gap-8 text-[14px] font-medium transition-all duration-500 relative z-10 ${
-                scrolled ? "text-slate-800" : "text-slate-600"
+                scrolled ? "text-slate-800" : "text-slate-300"
               }`}
             >
               <Link
                 href="#why-choose"
-                className={`transition-colors hover:text-black`}
+                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
               >
                 Why Us
               </Link>
               <Link
                 href="#projects"
-                className={`transition-colors hover:text-black`}
+                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
               >
                 Projects
               </Link>
               <Link
                 href="#pricing"
-                className={`transition-colors hover:text-black`}
+                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
               >
                 Pricing
               </Link>
               <Link
                 href="#contact"
-                className={`transition-colors hover:text-black`}
+                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
               >
                 Contact Us
               </Link>
@@ -126,7 +126,7 @@ export default function Navbar() {
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className={`md:hidden flex items-center justify-center p-2 -mr-2 rounded-full text-slate-900 hover:bg-slate-200/50 transition-colors shrink-0`}
+              className={`md:hidden flex items-center justify-center p-2 -mr-2 rounded-full transition-colors shrink-0 ${scrolled ? "text-slate-900 hover:bg-slate-200/50" : "text-white hover:bg-white/10"}`}
               aria-label="Open Mobile Menu"
             >
               <Menu

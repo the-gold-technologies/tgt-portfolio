@@ -17,16 +17,13 @@
   --color-brand-gold: #d4af37;
   --color-midnight: #0B0F29;
   --color-lime: #d9f969;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    sans-serif;
+  font-family: var(--font-sans);
   overflow-x: hidden;
   scroll-behavior: smooth;
   /* Hide scrollbar for IE, Edge and Firefox */

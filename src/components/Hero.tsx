@@ -3,178 +3,178 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  Award,
-  Globe,
-  ShieldCheck,
-  Smartphone,
-  Users,
+  ArrowUpRight,
+  Star,
+  MonitorSmartphone,
   Zap,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   const easeCurve = [0.16, 1, 0.3, 1] as const;
 
-  const floatingCards = [
-    {
-      icon: Award,
-      title: "10+ Years",
-      subtitle: "Experience",
-      delay: 0.8,
-      position: "-left-4 top-8 sm:-left-8 sm:top-12",
-    },
-    {
-      icon: Globe,
-      title: "Global",
-      subtitle: "Clients",
-      delay: 1.0,
-      position: "-right-2 top-1/4 sm:-right-6 sm:top-1/3",
-    },
-    {
-      icon: ShieldCheck,
-      title: "100+ Projects",
-      subtitle: "Delivered",
-      delay: 1.2,
-      position: "-left-2 bottom-20 sm:-left-6 sm:bottom-28",
-    },
-    {
-      icon: Users,
-      title: "Dedicated",
-      subtitle: "Team",
-      delay: 1.4,
-      position: "right-0 bottom-6 sm:-right-4 sm:bottom-12",
-    },
+  const tags = [
+    "UI/UX Design",
+    "Custom Dev",
+    "CRO",
+    "SEO",
+    "E-Commerce",
+    "SaaS Apps",
+    "Web Portals",
   ];
 
   return (
-    <section className="relative  flex items-center justify-center pt-32 pb-24 overflow-hidden bg-white">
-      {/* Background Gradients */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#d4af37]/10 blur-[120px] rounded-full mix-blend-multiply" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-blue-50/50 blur-[120px] rounded-full mix-blend-multiply" />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 md:px-8 w-full z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 xl:gap-16 items-center">
-        {/* Left Content */}
-        <div className="flex flex-col items-start">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: easeCurve }}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-50 border border-slate-200 shadow-sm mb-6"
-          >
-            <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
-            <span className="text-xs font-bold text-slate-700 uppercase tracking-widest">
-              Premium Web Development
-            </span>
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: easeCurve, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15] mb-4"
-          >
-            Websites That Don't Just Look Good.{" "}
-            <br className="hidden xl:block" />
-            <span className="font-serif italic text-[#d4af37] font-medium">
-              They Deliver Results.
-            </span>
-          </motion.h1>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: easeCurve, delay: 0.15 }}
-            className="text-lg md:text-xl font-bold text-slate-800 leading-snug mb-3 max-w-xl"
-          >
-            Custom Websites, Portals & Web Applications Designed to Generate
-            Leads, Build Trust, and Scale Your Business.
-          </motion.h2>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: easeCurve, delay: 0.2 }}
-            className="text-sm md:text-base text-slate-600 max-w-xl leading-relaxed mb-10 font-medium"
-          >
-            Whether you're a startup, SME, or enterprise, we create
-            high-performance websites tailored to your business goals — from
-            corporate websites and eCommerce stores to custom portals and
-            business applications.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: easeCurve, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
-          >
-            <Link
-              href="#contact"
-              className="px-8 py-3.5 rounded-full bg-[#d4af37] text-white font-bold text-sm tracking-wide hover:bg-[#c29f32] hover:shadow-[0_8px_25px_rgba(212,175,55,0.4)] hover:-translate-y-1 transition-all duration-300 text-center flex items-center justify-center gap-2 group"
-            >
-              Get Free Consultation
-              <Zap className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-            </Link>
-            <Link
-              href="#projects"
-              className="px-8 py-3.5 rounded-full bg-white border-2 border-slate-200 text-slate-800 font-bold text-sm tracking-wide hover:border-slate-300 hover:bg-slate-50 transition-all duration-300 text-center"
-            >
-              View Our Portfolio
-            </Link>
-          </motion.div>
+    <div className="bg-white relative">
+      {/* Full-width dark background hero section */}
+      <section className="relative mx-1 pt-32 md:pt-46 pb-48 md:pb-64 overflow-hidden bg-black rounded-b-[2.5rem] md:rounded-b-[5rem] shadow-2xl">
+        {/* Background Ambient Gradients */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <div className="absolute top-[-20%] right-[-10%] w-[70%] h-[70%] bg-[#d4af37]/15 blur-[120px] rounded-full mix-blend-screen" />
+          <div className="absolute bottom-[-10%] left-[40%] w-[50%] h-[50%] bg-yellow-500/15 blur-[120px] rounded-full mix-blend-screen" />
         </div>
 
-        {/* Right Content - Visual Showcase */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: easeCurve, delay: 0.4 }}
-          className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square flex items-center justify-center"
-        >
-          {/* Main Visual Frame */}
-          <div className="relative w-[90%] h-[90%] rounded-[2.5rem] overflow-hidden bg-slate-900 shadow-2xl border-4 border-white/40 shadow-[0_30px_60px_rgba(0,0,0,0.12)] z-10 group">
-            <Image
-              src="/hero-mockup.png"
-              alt="Dashboard Preview"
-              fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105"
-              priority
-            />
-            {/* Glass reflection overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent pointer-events-none" />
-          </div>
+        {/* Content Container */}
+        <div className="relative z-10 max-w-[96%] xl:max-w-[1400px] mx-auto w-full px-6 sm:px-10 md:px-16">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8 relative">
+            <div className="w-full max-w-4xl shrink-0 relative z-20">
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, ease: easeCurve }}
+                className="text-5xl sm:text-6xl md:text-7xl lg:text-[3.6rem] font-medium text-white tracking-tight leading-[1.05] mb-6"
+              >
+                Building the future with <br /> <span className="text-[#d4af37]">high converting</span> web <br className="hidden lg:block" />
+                 experiences
+              </motion.h1>
 
-          {/* Floating Modular Cards */}
-          {floatingCards.map((card, idx) => (
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: easeCurve, delay: 0.15 }}
+                className="text-slate-300 text-md md:text-md mb-10 max-w-xl font-normal leading-relaxed pr-2"
+              >
+                We help businesses unlock growth, with robust web development, high converting UI/UX Design and intelligent CRO strategies.
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: easeCurve, delay: 0.3 }}
+                className="flex flex-col sm:flex-row items-start sm:items-center gap-8"
+              >
+                <Link
+                  href="#contact"
+                  className="inline-flex items-center gap-4 bg-[#c29f32] text-white pl-8 pr-2 py-2 rounded-full font-bold text-sm tracking-wide hover:bg-[#d4af37] transition-all hover:scale-105 group shadow-[0_8px_25px_rgba(212,175,55,0.3)]"
+                >
+                  <span>GET FREE CONSULTATION</span>
+                  <span className="bg-slate-900 text-white p-2.5 rounded-full group-hover:rotate-45 transition-transform duration-300">
+                    <ArrowUpRight className="w-5 h-5" />
+                  </span>
+                </Link>
+
+                
+              <div className="flex flex-col gap-1.5">
+                  <p className="text-sm font-medium text-slate-300">Rated 4.9/5 by 100+ clients</p>
+                  <div className="flex gap-1 text-[#d4af37]">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Hero Image */}
             <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 20, scale: 0.9 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: card.delay,
-                ease: easeCurve,
-              }}
-              className={`absolute ${card.position} z-20 bg-white/80 backdrop-blur-xl border border-white/60 shadow-[0_8px_30px_rgba(0,0,0,0.08)] rounded-xl p-2 sm:p-3 flex items-center gap-2 sm:gap-3 hover:-translate-y-1 transition-transform cursor-default`}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, ease: easeCurve, delay: 0.2 }}
+              className="w-full lg:absolute lg:right-[-12%] xl:-right-16 lg:top-1/2 lg:-translate-y-[47%] lg:w-[700px] xl:w-[750px] aspect-square max-w-2xl lg:max-w-none z-10 pointer-events-none mt-8 lg:mt-0"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#d4af37]/10 flex items-center justify-center shrink-0">
-                <card.icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#d4af37]" />
-              </div>
-              <div>
-                <h4 className="text-slate-900 font-bold text-[11px] sm:text-[13px] leading-tight">
-                  {card.title}
-                </h4>
-                <p className="text-slate-500 text-[9px] sm:text-[11px] font-medium">
-                  {card.subtitle}
-                </p>
-              </div>
+              <Image
+                src="/hero-image.png"
+                alt="Digital Experience"
+                fill
+                className="object-contain drop-shadow-[0_0_40px_rgba(212,175,55,0.15)]"
+                priority
+              />
             </motion.div>
-          ))}
-        </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bottom Floating Cards */}
+      <div className="max-w-[96%] xl:max-w-[1400px] mx-auto w-full relative z-20 -mt-28 md:-mt-36 px-6 sm:px-10 md:px-16 pb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+
+          {/* Card 1: Services Tags */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: easeCurve, delay: 0.4 }}
+            className="bg-white/90 backdrop-blur-xl rounded-3xl p-6 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-white flex flex-col justify-center min-h-[220px] hover:-translate-y-2 transition-transform duration-500"
+          >
+            <div className="flex flex-wrap gap-2 mb-6">
+              {tags.map((tag, i) => (
+                <span key={i} className="px-3 py-1.5 bg-slate-50 text-slate-700 text-xs font-bold rounded-full border border-slate-200">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <p className="text-slate-500 text-xs font-medium mt-auto">End-to-end digital solutions</p>
+          </motion.div>
+
+          {/* Card 2: Metric Highlight */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: easeCurve, delay: 0.5 }}
+            className="bg-[#d4af37] rounded-3xl p-6 shadow-[0_20px_40px_-15px_rgba(212,175,55,0.3)] flex flex-col justify-between min-h-[220px] text-slate-900 hover:-translate-y-2 transition-transform duration-500"
+          >
+            <p className="text-sm font-semibold mb-2 opacity-90">Commitment to ROI</p>
+            <div>
+              <h3 className="text-6xl lg:text-7xl font-black tracking-tighter mb-2">100<span className="text-4xl">%</span></h3>
+              <p className="text-sm font-semibold opacity-90 leading-tight">Focus on measurable growth, lead generation, and scalable solutions.</p>
+            </div>
+          </motion.div>
+
+          {/* Card 3: Dark Expertise */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: easeCurve, delay: 0.6 }}
+            className="bg-black rounded-3xl p-6 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.2)] flex flex-col justify-center min-h-[220px] text-white hover:-translate-y-2 transition-transform duration-500 border border-zinc-800"
+          >
+            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-6">
+              <Zap className="w-6 h-6 text-[#d4af37]" />
+            </div>
+            <h3 className="text-xl md:text-[1.3rem] font-bold leading-tight">
+              Expertise that Combines <span className="text-[#d4af37]">Strategy, Design</span>, and Advanced Technology.
+            </h3>
+          </motion.div>
+
+          {/* Card 4: Data Points / Project */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: easeCurve, delay: 0.7 }}
+            className="bg-gradient-to-br from-zinc-50 to-white rounded-3xl p-6 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-zinc-200 flex flex-col justify-between min-h-[220px] hover:-translate-y-2 transition-transform duration-500"
+          >
+            <div className="flex justify-between items-start">
+              <p className="text-sm text-slate-500 font-bold uppercase tracking-wider">Track Record</p>
+              <div className="p-2.5 bg-zinc-100 rounded-full">
+                <MonitorSmartphone className="w-5 h-5 text-zinc-800" />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-5xl font-black text-slate-900 mb-2">100+</h3>
+              <p className="text-sm font-semibold text-slate-600 leading-tight">Successful web applications and digital portals delivered globally.</p>
+            </div>
+          </motion.div>
+
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
