@@ -15,23 +15,28 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1, ease: easeCurve }}
-      className="relative pt-16 pb-10 px-4 md:px-8 text-gray-400 overflow-hidden bg-[#020410] border-t border-gray-900"
+      className="relative pt-16 pb-10 px-4 md:px-8 text-gray-400 overflow-hidden bg-black border-t border-zinc-900/60"
     >
+      {/* Background Ambient Gradients to match Hero section */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] bg-[#d4af37]/12 blur-[120px] rounded-full mix-blend-screen" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-yellow-500/12 blur-[120px] rounded-full mix-blend-screen" />
+      </div>
+
       {/* Background Image and Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
           src="/hero-bg.png"
           alt="Footer Background"
           fill
-          className="object-cover opacity-10"
+          className="object-cover opacity-5"
         />
-        <div className="absolute inset-0 bg-[#020410]/90 backdrop-blur-sm" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#020410] via-[#020410]/90 to-[#020410]/50" />
+        <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-black/50" />
       </div>
 
       {/* Decorative ambient light */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[1px] bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent z-10" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#d4af37]/5 blur-[120px] pointer-events-none z-10" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Pre-footer CTA */}

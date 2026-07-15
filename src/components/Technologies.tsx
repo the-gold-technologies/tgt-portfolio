@@ -383,17 +383,20 @@ export default function Technologies() {
   return (
     <section
       id="technologies"
-      className="py-28 bg-black text-white z-10 relative border-t border-gray-900 overflow-hidden w-full animate-fadeIn"
+      className="py-28 bg-black text-white z-10 relative border-t border-zinc-900/60 overflow-hidden w-full animate-fadeIn"
     >
-      {/* Subtle radial background glow behind the tech container */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#d4af37]/5 blur-[120px] rounded-full pointer-events-none z-0" />
+      {/* Background Ambient Gradients to match Hero section */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] bg-[#d4af37]/18 blur-[120px] rounded-full mix-blend-screen" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-yellow-500/18 blur-[120px] rounded-full mix-blend-screen" />
+      </div>
 
       {/* Background Image Overlay */}
       <div
-        className="absolute inset-0 z-[1] bg-cover bg-center bg-no-repeat opacity-[0.2]"
+        className="absolute inset-0 z-[1] bg-cover bg-center bg-no-repeat opacity-[0.12]"
         style={{ backgroundImage: "url('/tech-bg.png')" }}
       />
-      <div className="absolute inset-0 z-[2] bg-black/80 pointer-events-none" />
+      <div className="absolute inset-0 z-[2] bg-black/85 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 w-full relative z-10">
         <style>{`
@@ -467,7 +470,7 @@ export default function Technologies() {
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 mt-8 px-6 py-3.5 bg-white text-midnight rounded-full font-bold text-xs uppercase tracking-wider border border-gray-200 hover:bg-gray-100 transition-all shadow-[0_4px_12px_rgba(255,255,255,0.1)] group"
+              className="inline-flex items-center gap-2 mt-8 px-6 py-3.5 bg-white text-midnight rounded-full font-bold text-xs uppercase tracking-wider border border-transparent hover:bg-[#c29f32] hover:text-white hover:border-[#d4af37] hover:shadow-[0_0_20px_rgba(212,175,55,0.35)] transition-all group"
             >
               Explore Tech Stack
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
