@@ -21,6 +21,7 @@ export interface Project {
   features: string[];
   image: string;
   link?: string;
+  tag?: string;
 }
 
 export interface TeamMember {

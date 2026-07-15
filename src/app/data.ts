@@ -150,7 +150,8 @@ export const PROJECTS: Project[] = [
     mockupType: 'laptop',
     features: ['QR Asset Tracking', 'Barcode Scanning', 'Real-Time Reports'],
     image: '/projects/inventory.png',
-    link: 'https://skjewellers.tgtpartner.com/'
+    link: 'https://skjewellers.tgtpartner.com/',
+    tag: 'AWARD WINNING'
   },
   {
     title: 'Catfy – AI-Driven Smart Creative Editor',
@@ -166,7 +167,8 @@ export const PROJECTS: Project[] = [
     mockupType: 'laptop',
     features: ['AI Catalog Builder', 'Dynamic Sharing', 'Creative Editor'],
     image: '/projects/catfy.png',
-    link: 'https://catfy-catalog.vercel.app/'
+    link: 'https://catfy-catalog.vercel.app/',
+    tag: 'AWARD WINNING'
   },
   {
     title: 'Complete ERP for IP Industry',
@@ -181,7 +183,8 @@ export const PROJECTS: Project[] = [
     mockupType: 'laptop',
     features: ['All-in-One ERP', 'IP Data Bank', 'Business Analytics'],
     image: '/projects/ip-erp.png',
-    link: 'https://ip-erp-iota.vercel.app/'
+    link: 'https://ip-erp-iota.vercel.app/',
+    tag: 'AWARD WINNING'
   },
   {
     title: 'LeadZenor – AI-Powered Event Networking & Lead Management',
@@ -196,7 +199,8 @@ export const PROJECTS: Project[] = [
     mockupType: 'laptop',
     features: ['AI Lead Capture', 'QR Digital Profiles', 'Auto Follow-Ups'],
     image: '/projects/leadzenor.png',
-    link: 'https://leadflux.tgtpartner.com/'
+    link: 'https://leadflux.tgtpartner.com/',
+    tag: 'AWARD WINNING'
   }
 ];
 

@@ -6,7 +6,11 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Navbar() {
+export default function Navbar({
+  alwaysLight = false,
+}: {
+  alwaysLight?: boolean;
+}) {
   const [scrolled, setScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const currentScrolledRef = useRef(scrolled);
@@ -36,12 +40,14 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    
+
     // Check initial scroll position on mount
     updateScroll();
-    
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isLight = scrolled || alwaysLight;
 
   return (
     <>
@@ -52,7 +58,9 @@ export default function Navbar() {
           className={`pointer-events-auto transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] ${
             scrolled
               ? "flex items-center bg-[#f1f1f1] backdrop-blur-md shadow-sm border border-gray-200/50 justify-between w-max rounded-full m-auto px-6 py-2.5 gap-6 md:gap-12"
-              : "w-full pt-8 pb-4 bg-transparent rounded-none"
+              : alwaysLight
+                ? "w-full pt-6 pb-6 bg-white rounded-none"
+                : "w-full pt-8 pb-4 bg-transparent rounded-none"
           }`}
         >
           <div
@@ -66,15 +74,15 @@ export default function Navbar() {
               <div className="flex items-center gap-2.5 relative z-10">
                 <Image
                   alt="logo"
-                  width={scrolled ? 40 : 52}
-                  height={scrolled ? 40 : 52}
+                  width={isLight ? 40 : 52}
+                  height={isLight ? 40 : 52}
                   className={`rounded-full transition-all duration-500 shrink-0`}
                   src="/logo.jpeg"
                 />
                 <span
                   className={`font-bold tracking-tight transition-all duration-500 whitespace-nowrap overflow-hidden ${
-                    scrolled
-                      ? "text-slate-900 text-[15px] max-w-[300px] opacity-100 ml-2 md:max-w-0 md:opacity-0 md:ml-0"
+                    isLight
+                      ? `text-slate-900 text-[15px] max-w-[300px] opacity-100 ml-2 ${scrolled ? "md:max-w-0 md:opacity-0 md:ml-0" : ""}`
                       : "text-white text-[17px] sm:text-[19px] max-w-[300px] opacity-100 ml-2"
                   }`}
                 >
@@ -85,30 +93,30 @@ export default function Navbar() {
 
             <div
               className={`hidden md:flex items-center gap-8 text-[14px] font-medium transition-all duration-500 relative z-10 ${
-                scrolled ? "text-slate-800" : "text-slate-300"
+                isLight ? "text-slate-800" : "text-slate-300"
               }`}
             >
               <Link
                 href="#why-choose"
-                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
+                className={`transition-colors ${isLight ? "hover:text-black" : "hover:text-white"}`}
               >
                 Why Us
               </Link>
               <Link
                 href="#projects"
-                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
+                className={`transition-colors ${isLight ? "hover:text-black" : "hover:text-white"}`}
               >
                 Projects
               </Link>
               <Link
                 href="#pricing"
-                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
+                className={`transition-colors ${isLight ? "hover:text-black" : "hover:text-white"}`}
               >
                 Pricing
               </Link>
               <Link
                 href="#contact"
-                className={`transition-colors ${scrolled ? "hover:text-black" : "hover:text-white"}`}
+                className={`transition-colors ${isLight ? "hover:text-black" : "hover:text-white"}`}
               >
                 Contact Us
               </Link>
@@ -117,7 +125,7 @@ export default function Navbar() {
             <div className="hidden sm:flex items-center gap-4 transition-all duration-500 relative z-10 shrink-0">
               <Link
                 href="#contact"
-                className={`px-6 py-2.5 rounded-full font-bold bg-[#D4AF37] text-black hover:bg-[#F5D061] transition-all shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_25px_rgba(212,175,55,0.6)] hover:scale-105 active:scale-95 ${scrolled ? "text-[12px] px-5 py-2.5" : "text-[13px]"}`}
+                className={`px-6 py-2.5 rounded-full font-bold bg-[#D4AF37] text-black hover:bg-[#F5D061] transition-all shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_25px_rgba(212,175,55,0.6)] hover:scale-105 active:scale-95 ${isLight ? "text-[12px] px-5 py-2.5" : "text-[13px]"}`}
               >
                 Book a Call
               </Link>
@@ -126,12 +134,12 @@ export default function Navbar() {
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className={`md:hidden flex items-center justify-center p-2 -mr-2 rounded-full transition-colors shrink-0 ${scrolled ? "text-slate-900 hover:bg-slate-200/50" : "text-white hover:bg-white/10"}`}
+              className={`md:hidden flex items-center justify-center p-2 -mr-2 rounded-full transition-colors shrink-0 ${isLight ? "text-slate-900 hover:bg-slate-200/50" : "text-white hover:bg-white/10"}`}
               aria-label="Open Mobile Menu"
             >
               <Menu
                 className={
-                  scrolled ? "w-5 h-5 sm:w-6 sm:h-6" : "w-6 h-6 sm:w-7 sm:h-7"
+                  isLight ? "w-5 h-5 sm:w-6 sm:h-6" : "w-6 h-6 sm:w-7 sm:h-7"
                 }
               />
             </button>

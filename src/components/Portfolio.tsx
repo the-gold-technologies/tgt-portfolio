@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { PROJECTS } from "../app/data";
 
 export default function Portfolio() {
@@ -105,6 +106,17 @@ export default function Portfolio() {
               </div>
             );
           })}
+        </div>
+
+        {/* View Full Portfolio Button */}
+        <div className="flex justify-center mt-12">
+          <Link
+            href="/portfolio"
+            className="group relative inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-black bg-white hover:bg-[#d4af37] hover:text-black rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(212,175,55,0.3)]"
+          >
+            View Full Portfolio
+            <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
         </div>
       </div>
     </section>
