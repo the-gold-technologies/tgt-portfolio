@@ -16,6 +16,8 @@ import Contact from "../components/Contact";
 import CtaBanner from "../components/CtaBanner";
 import Footer from "../components/Footer";
 
+import ClientMarquee from "../components/ClientMarquee";
+
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -34,6 +36,7 @@ export default function Home() {
 
       <Navbar />
       <Hero />
+      <ClientMarquee />
       <PainPoint />
       <WhyChoose />
 
